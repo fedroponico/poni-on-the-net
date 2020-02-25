@@ -1,9 +1,9 @@
-
-
 body {
+    cursor:url(https://bookcreator.com/wp-content/uploads/2016/07/white-circle.png), auto;
     font-family: 'Heebo' ;
     background: linear-gradient(-60deg, #7401DF,#4000FF, #800080,#0000FF, rgb(82, 18, 102), #4B088A);
-	background-size: 600% 600%;
+    background-size: 500%;
+    
 	-webkit-animation: gradientBG 15s ease infinite;
             animation: gradientBG 20s ease infinite;
 	width: 100%;
@@ -35,27 +35,45 @@ body {
     }
 }
 
-#head{
-    
-   background-color: #4B088A;
-            
+
+
+#alto-sx{
+    position: absolute;
+    left: 5%;
+}
+
+#alto-dx{
+    position: absolute;
+    right: 5%;
+}
+
+.dot {
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+#works{
+  
+    position: relative;
 }
 
 #about{
-    
-    font-size: 25px;
-    width: 100%;
-    padding: 2%;
+   
 }
 
 a{
-   
-    color:white;
+    color:#fff
 }
 
-article{
-    position: absolute;
-}
 
 /* For mobile phones: */
 [class*="col-"] {
