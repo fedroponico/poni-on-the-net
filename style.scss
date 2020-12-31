@@ -4,53 +4,36 @@
   }
   
   :root {
-    --scenePerspective: .5;
+    --scenePerspective: .3;
     --scenePerspectiveOriginX: 50;
     --scenePerspectiveOriginY: 30;
-    --itemZ: 4; 
+    --itemZ: 5; 
     --cameraSpeed: 400; 
     --cameraZ: 0; 
     --viewportHeight: 0; 
   
-    --purple: #ff14d0;
-    --green:  #0f0;
+    // --primo: #ff14d0;
+    // --primo: #560C84;
+    --primo: #1AE11A;
+
+    // --secondo:  #0f0;
+    // --secondo: #1FEA76;
+    --secondo:#f2f6fa;
+
     --main: #00f;
   
     --reg: 15vw;
     --tit: 20vw;
   }
 
+  body{
+    background-color: var(--secondo);
+  }
+
   #titolo{
     font-family: "Cotham";
     bottom: 1vw;
   }
-
-  #bio {
-    background-color: var(--green);
-    background-color: var(--main);
-  }
-
-  #bio p {
-    color: white;
-  }
-
-  #bio h1 {
-    color: white;
-  }
-
-
-
-  div > img{
-    width: 100%;
-  }
-
-
-  
-
-  .myPath {
-    width: 10px;
-  }
-
 
 
 
@@ -78,6 +61,7 @@
     );
   }
 
+
   .viewport .scene3D-container .scene3D {
     position: absolute;
     top: 0;
@@ -88,6 +72,18 @@
     will-change: transform;
   }
 
+  .viewport .scene3D h1 img{
+    width: 150%;
+  }
+
+  // .viewport .scene3D-container .scene3D:nth-child(1){
+  //   background-color: red;
+  //   color: white;
+  // }
+
+
+
+
   .viewport .scene3D-container .scene3D {
     > div {
       position: absolute;
@@ -97,9 +93,10 @@
       font-size: var(--reg);
       font-family: "Cotham";
       // color: rgb(28, 26, 26);
-      background-color: white;
+      background-color: var(--secondo);
       padding: 10vw;
-      border: solid 2vw var(--main);
+      border: solid 2vw var(--primo);
+      
   
       
       
@@ -109,12 +106,12 @@
   
       &:nth-child(2n) {
         left: 20vw;
-        // border: solid 2vw var(--purple);
+        // border: solid 2vw var(--primo);
       }
   
       &:nth-child(2n + 1) {
         right: 20vw;
-        // border: solid 2px var(--green);
+        // border: solid 2px var(--secondo);
       }
   
       @for $i from 0 through 25 {

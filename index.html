@@ -9,9 +9,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <link rel="stylesheet" href="style.css">
+        <style>
+          .spirale{position: fixed; width: 80%; margin: 0 10%; top: -10vw; animation: spirale 10s infinite;}
+
+          @keyframes spirale {
+            100% {transform:rotate(360deg)}
+          }
+        </style>
     </head>
     <body>
-        
+        <div class="spirale">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
           <defs>
@@ -20,31 +27,39 @@
         
           <text>
             <textPath href="#MyPath">
-              Federico Poni - Artista/Piccione/Designer/cyborg<
+              Questa frase sarà dinamica, connettero il mio telegram a qua e viaz quando ho le palle girate pubblico insulti qua
+              Questa frase sarà dinamica, connettero il mio telegram a qua e viaz quando ho le palle girate pubblico insulti qua
+              Questa frase sarà dinamica, connettero il mio telegram a qua e viaz quando ho le palle girate pubblico insulti qua
+              Questa frase sarà dinamica, connettero il mio telegram a qua e viaz quando ho le palle girate pubblico insulti qua
+                
             </textPath>
           </text>
         
         </svg>
+      </div>
+
+      <!-- <div class="viewport">
+        <div class="scene3D-container">
+          <div class="scene3D">
+
+     <div id="bio">
+        <h1>Federico Poni:<br>a<span id="me"></span><br>stuck in a body of an artist</h1>
+        <p></p>
+      </div> -->
 
 
+            <!--</div>
+          </div>
+        </div> -->
 
         <div class="viewport">
           <div class="scene3D-container">
-            <div class="scene3D">
-              <div id="bio">
-                <h1>Federico Poni:<br>a<span id="me"></span><br>stuck in a body of an artist</h1>
-                <p></p>
-              </div>
-
-              <div class="works"></div>
-
-              <div>
-                <img src="assets/img/ 9.jpg">
-              </div>
+            <div class="scene3D"> 
               
             </div>
           </div>
         </div>
+        
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <script src="script.js" async></script>
     </body>

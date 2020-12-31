@@ -1,22 +1,70 @@
 [
   {
     "titolo": "Federico Poni is an artist?",
-    "tecnica": "wcwdcw",
-    "descrizione": "dvsdv"
+    "tecnica": "",
+    "descrizione": "fa un po' di cose che puoi vedere su ",
+    "stile": "background-color:#1AE11A; color:var(--secondo);;",
+    "img":""
   },
   {
-    "titolo": "dvbsd",
-    "tecnica": "sdvsd",
-    "descrizione": "sdvsd"
+    "titolo": "",
+    "tecnica": "",
+    "descrizione": "",
+    "stile":"border: 0;background-color: rgba(0,0,0,0)",
+    "img":"/assets/img/self-portrait.png\" style=\" width: 150%; \""
+  },
+
+
+
+
+  {
+    "titolo": "\"Dear Humans, <br>Who is writing this is the Network itself.\"",
+    "tecnica":"Performance + SpeechToText - 2020",
+    "descrizione":"Performance aimed to trigger a clye in occasion of \"Climb the Firewall\", a IRL game organized by Louisa Teichmann.<br> ",
+    "stile": "",
+    "img":""
   },
   {
-    "titolo": "sdvs",
-    "tecnica": "dvsd",
-    "descrizione": "dfs"
+    "titolo": "",
+    "tecnica": "",
+    "descrizione": "",
+    "stile":"border: 0;background-color: rgba(0,0,0,0)",
+    "img":"/assets/img/DH.jpg\" style=\" width: 150%; \""
+
+  },
+
+
+
+  {
+    "titolo": "Practical Vision",
+    "tecnica":"Website, Telegram Bot, Publication - 2020",
+    "descrizione":"In the context of the republishing project \"Wor(l)ds for the future\", I worked with the text Practical Vision wrote by the pan-African collective Jalada<br>Website: issue.xpub.nl/13/PRACTICAL_VISION ",
+    "stile": "",
+    "img":""
   },
   {
-    "titolo": "dsvs",
-    "tecnica": "dsv",
-    "descrizione": "sd"
+    "titolo": "",
+    "tecnica": "",
+    "descrizione": "",
+    "stile":"border: 0;background-color: rgba(0,0,0,0)",
+    "img":"/assets/img/PV1.jpg\" style=\" width: 150%; \""
+  },
+  {
+    "titolo": "",
+    "tecnica": "",
+    "descrizione": "",
+    "stile":"border: 0;background-color: rgba(0,0,0,0)",
+    "img":"/assets/img/PV2.jpg\" style=\" width: 150%; \""
+  },
+  {
+    "titolo": "",
+    "tecnica": "",
+    "descrizione": "",
+    "stile":"border: 0;background-color: rgba(0,0,0,0)",
+    "img":"/assets/img/PV3.jpg\" style=\" width: 150%; \""
   }
+
+
+
+
 ]

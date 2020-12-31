@@ -9,15 +9,23 @@ var typewriter = new Typewriter(randomAggettivo, {
 });
 
 typewriter.typeString('n artist')
-        .pauseFor(0)
+        .pauseFor(50)
         .deleteAll()
         .typeString(' pigeon')
-        .pauseFor(0)
+        .pauseFor(50)
         .deleteAll()
         .typeString(' copy-paster')
-        .pauseFor(0)
+        .pauseFor(50)
         .deleteAll()
         .typeString(' boring horse')
+        .pauseFor(50)
+        .deleteAll()
+        .typeString(' XPUB student')
+        .pauseFor(50)
+        .deleteAll()
+        .typeString(' website builder')
+
+        
         
         .start();
 
@@ -39,17 +47,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function createWorkItem(work) {
-  return `<div>
+  return `<div style="${work.stile}">
     <h1>${work.titolo}</h1>
     <p>${work.tecnica}</p>
     <p>${work.descrizione}</p>
+    <img src="${work.img}">
   </div>`;
 }
  
 
 
 function appendWorks(works) {
-  const worksEl = document.querySelector(".viewport .scene3D .works");
+  const worksEl = document.querySelector(".viewport .scene3D");
   let worksNodes = [];
 
   for (work of works) {
@@ -71,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function setSceneHeight() {
-  const numberOfItems = 3; 
+  const numberOfItems = works.lenght; 
   const itemZ = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue("--itemZ")
   );
