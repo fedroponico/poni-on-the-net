@@ -1,112 +1,173 @@
-body {
-    cursor:url(https://bookcreator.com/wp-content/uploads/2016/07/white-circle.png), auto;
-    font-family: 'Heebo' ;
-    background: linear-gradient(-60deg, #7401DF,#4000FF, #800080,#0000FF, rgb(82, 18, 102), #4B088A);
-    background-size: 500%;
-    
-	-webkit-animation: gradientBG 15s ease infinite;
-            animation: gradientBG 20s ease infinite;
-	width: 100%;
-	height: 100vh;
-    color: #fff;
-    
+@font-face {
+  font-family: "Cotham";
+  src: url("/assets/fonts/CothamSans.otf");
+}
+:root {
+  --scenePerspective: .5;
+  --scenePerspectiveOriginX: 50;
+  --scenePerspectiveOriginY: 30;
+  --itemZ: 4;
+  --cameraSpeed: 400;
+  --cameraZ: 0;
+  --viewportHeight: 0;
+  --purple: #ff14d0;
+  --green: #0f0;
+  --main: #00f;
+  --reg: 15vw;
+  --tit: 20vw;
 }
 
-@-webkit-keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 150% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 40%;
-    }
+#titolo {
+  font-family: "Cotham";
+  bottom: 1vw;
 }
 
-
-
-#alto-sx{
-    position: absolute;
-    left: 5%;
+#bio {
+  background-color: var(--green);
+  background-color: var(--main);
 }
 
-#alto-dx{
-    position: absolute;
-    right: 5%;
+#bio p {
+  color: white;
 }
 
-.dot {
-    height: 250px;
-    width: 250px;
-    background-color: black;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+#bio h1 {
+  color: white;
+}
+
+div > img {
+  width: 100%;
+}
+
+.myPath {
+  width: 10px;
+}
+
+.viewport {
+  height: calc(var(--viewportHeight) * 1px);
+}
+
+.viewport .scene3D-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
+  perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc( var(--scenePerspectiveOriginY) * 1% );
+  will-change: perspective-origin;
+  transform: translate3d(0.1, 0.1, 0.1);
+}
+
+.viewport .scene3D-container .scene3D {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(calc(var(--cameraZ) * 1px));
+  will-change: transform;
+}
+
+.viewport .scene3D-container .scene3D > div {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 40%;
+  font-size: var(--reg);
+  font-family: "Cotham";
+  background-color: white;
+  padding: 10vw;
+  border: solid 2vw var(--main);
+}
+@media only screen and (min-width: 600px) {
+  .viewport .scene3D-container .scene3D > div {
+    width: 350%;
   }
-
-#works{
-  
-    position: relative;
+}
+.viewport .scene3D-container .scene3D > div:nth-child(2n) {
+  left: 20vw;
+}
+.viewport .scene3D-container .scene3D > div:nth-child(2n+1) {
+  right: 20vw;
+}
+.viewport .scene3D-container .scene3D > div:nth-child(0) {
+  transform: translate3D(-24%, 13%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(1) {
+  transform: translate3D(19%, -46%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(2) {
+  transform: translate3D(20%, 23%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(3) {
+  transform: translate3D(12%, 11%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(4) {
+  transform: translate3D(-17%, 35%, calc(var(--itemZ) * var(--cameraSpeed) * 4 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(5) {
+  transform: translate3D(22%, -44%, calc(var(--itemZ) * var(--cameraSpeed) * 5 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(6) {
+  transform: translate3D(18%, -34%, calc(var(--itemZ) * var(--cameraSpeed) * 6 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(7) {
+  transform: translate3D(11%, -6%, calc(var(--itemZ) * var(--cameraSpeed) * 7 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(8) {
+  transform: translate3D(-13%, 6%, calc(var(--itemZ) * var(--cameraSpeed) * 8 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(9) {
+  transform: translate3D(10%, -14%, calc(var(--itemZ) * var(--cameraSpeed) * 9 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(10) {
+  transform: translate3D(-20%, 29%, calc(var(--itemZ) * var(--cameraSpeed) * 10 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(11) {
+  transform: translate3D(-8%, 16%, calc(var(--itemZ) * var(--cameraSpeed) * 11 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(12) {
+  transform: translate3D(-16%, -37%, calc(var(--itemZ) * var(--cameraSpeed) * 12 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(13) {
+  transform: translate3D(-8%, -1%, calc(var(--itemZ) * var(--cameraSpeed) * 13 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(14) {
+  transform: translate3D(7%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 14 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(15) {
+  transform: translate3D(22%, 15%, calc(var(--itemZ) * var(--cameraSpeed) * 15 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(16) {
+  transform: translate3D(15%, -7%, calc(var(--itemZ) * var(--cameraSpeed) * 16 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(17) {
+  transform: translate3D(1%, 49%, calc(var(--itemZ) * var(--cameraSpeed) * 17 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(18) {
+  transform: translate3D(-19%, -31%, calc(var(--itemZ) * var(--cameraSpeed) * 18 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(19) {
+  transform: translate3D(-10%, 47%, calc(var(--itemZ) * var(--cameraSpeed) * 19 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(20) {
+  transform: translate3D(2%, -13%, calc(var(--itemZ) * var(--cameraSpeed) * 20 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(21) {
+  transform: translate3D(16%, 37%, calc(var(--itemZ) * var(--cameraSpeed) * 21 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(22) {
+  transform: translate3D(6%, -8%, calc(var(--itemZ) * var(--cameraSpeed) * 22 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(23) {
+  transform: translate3D(-23%, 10%, calc(var(--itemZ) * var(--cameraSpeed) * 23 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(24) {
+  transform: translate3D(3%, -4%, calc(var(--itemZ) * var(--cameraSpeed) * 24 * -1px));
+}
+.viewport .scene3D-container .scene3D > div:nth-child(25) {
+  transform: translate3D(-16%, 8%, calc(var(--itemZ) * var(--cameraSpeed) * 25 * -1px));
 }
 
-#about{
-   
-}
-
-a{
-    color:#fff
-}
-
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+/*# sourceMappingURL=style.css.map */
