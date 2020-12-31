@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Cotham";
+    src: url("/assets/fonts/CothamSans.otf");
+  }
+  
+  :root {
+    --scenePerspective: .5;
+    --scenePerspectiveOriginX: 50;
+    --scenePerspectiveOriginY: 30;
+    --itemZ: 4; 
+    --cameraSpeed: 400; 
+    --cameraZ: 0; 
+    --viewportHeight: 0; 
+  
+    --purple: #ff14d0;
+    --green:  #0f0;
+    --main: #00f;
+  
+    --reg: 15vw;
+    --tit: 20vw;
+  }
+
+  #titolo{
+    font-family: "Cotham";
+    bottom: 1vw;
+  }
+
+  #bio {
+    background-color: var(--green);
+    background-color: var(--main);
+  }
+
+  #bio p {
+    color: white;
+  }
+
+  #bio h1 {
+    color: white;
+  }
+
+
+
+  div > img{
+    width: 100%;
+  }
+
+
+  
+
+  .myPath {
+    width: 10px;
+  }
+
+
+
+
+  .viewport {
+    height: calc(var(--viewportHeight) * 1px);
+  }
+
+  
+  .viewport .scene3D-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
+    perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(
+        var(--scenePerspectiveOriginY) * 1%
+      );
+    will-change: perspective-origin;
+    transform: translate3d(
+      0.1,
+      0.1,
+      0.1
+    );
+  }
+
+  .viewport .scene3D-container .scene3D {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(calc(var(--cameraZ) * 1px));
+    will-change: transform;
+  }
+
+  .viewport .scene3D-container .scene3D {
+    > div {
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 40%;
+      font-size: var(--reg);
+      font-family: "Cotham";
+      // color: rgb(28, 26, 26);
+      background-color: white;
+      padding: 10vw;
+      border: solid 2vw var(--main);
+  
+      
+      
+      @media only screen and (min-width: 600px) {
+        width: 350%;
+      }
+  
+      &:nth-child(2n) {
+        left: 20vw;
+        // border: solid 2vw var(--purple);
+      }
+  
+      &:nth-child(2n + 1) {
+        right: 20vw;
+        // border: solid 2px var(--green);
+      }
+  
+      @for $i from 0 through 25 {
+        &:nth-child(#{$i}) {
+          transform: translate3D(
+            random(50) - 25 * 1%,
+            random(100) - 50 * 1%,
+            calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px)
+          );
+        }
+      }
+    }
+  }
