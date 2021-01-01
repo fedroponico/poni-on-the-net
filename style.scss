@@ -1,48 +1,18 @@
-@font-face {
-    font-family: "Cotham";
-    src: url("/assets/fonts/CothamSans.otf");
-  }
-  
-  :root {
-    --scenePerspective: .3;
-    --scenePerspectiveOriginX: 50;
-    --scenePerspectiveOriginY: 30;
-    --itemZ: 5; 
-    --cameraSpeed: 400; 
-    --cameraZ: 0; 
-    --viewportHeight: 0; 
-  
-    // --primo: #ff14d0;
-    // --primo: #560C84;
-    --primo: #1AE11A;
+:root {
+  --scenePerspective: 1;
+  --scenePerspectiveOriginX: 50;
+  --scenePerspectiveOriginY: 30;
+  --itemZ: 2.3;
+  --cameraSpeed: 150; // Where 1 is the fastest
+  --cameraZ: 30;
+  --viewportHeight: 10;
 
-    // --secondo:  #0f0;
-    // --secondo: #1FEA76;
-    --secondo:#f2f6fa;
+}
 
-    --main: #00f;
-  
-    --reg: 15vw;
-    --tit: 20vw;
-  }
+.viewport {
+  height: calc(var(--viewportHeight) * 1px);
 
-  body{
-    background-color: var(--secondo);
-  }
-
-  #titolo{
-    font-family: "Cotham";
-    bottom: 1vw;
-  }
-
-
-
-  .viewport {
-    height: calc(var(--viewportHeight) * 1px);
-  }
-
-  
-  .viewport .scene3D-container {
+  .scene3D-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -50,78 +20,166 @@
     height: 100%;
 
     perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
-    perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(
-        var(--scenePerspectiveOriginY) * 1%
-      );
+    perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%)
+      calc(var(--scenePerspectiveOriginY) * 1%);
     will-change: perspective-origin;
-    transform: translate3d(
-      0.1,
-      0.1,
-      0.1
-    );
-  }
+    transform: translate3d(0, 0, 0); //Allow Hardware-Accelerated CSS
 
-
-  .viewport .scene3D-container .scene3D {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    transform-style: preserve-3d;
-    transform: translateZ(calc(var(--cameraZ) * 1px));
-    will-change: transform;
-  }
-
-  .viewport .scene3D h1 img{
-    width: 150%;
-  }
-
-  // .viewport .scene3D-container .scene3D:nth-child(1){
-  //   background-color: red;
-  //   color: white;
-  // }
-
-
-
-
-  .viewport .scene3D-container .scene3D {
-    > div {
+    .scene3D {
       position: absolute;
-      display: block;
+      top: 0;
+      height: 100vh;
       width: 100%;
-      top: 40%;
-      font-size: var(--reg);
-      font-family: "Cotham";
-      // color: rgb(28, 26, 26);
-      background-color: var(--secondo);
-      padding: 10vw;
-      border: solid 2vw var(--primo);
-      
-  
-      
-      
-      @media only screen and (min-width: 600px) {
-        width: 350%;
-      }
-  
-      &:nth-child(2n) {
-        left: 20vw;
-        // border: solid 2vw var(--primo);
-      }
-  
-      &:nth-child(2n + 1) {
-        right: 20vw;
-        // border: solid 2px var(--secondo);
-      }
-  
-      @for $i from 0 through 25 {
-        &:nth-child(#{$i}) {
-          transform: translate3D(
-            random(50) - 25 * 1%,
-            random(100) - 50 * 1%,
-            calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px)
-          );
+      transform-style: preserve-3d;
+      transform: translateZ(calc(var(--cameraZ) * 1px));
+      will-change: transform;
+
+      > div {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 40%;
+
+        @media only screen and (min-width: 600px) {
+          width: 45%;
+        }
+
+        &:nth-child(2n) {
+          left: 0;
+        }
+
+        &:nth-child(2n + 1) {
+          right: 0;
+        }
+
+        @for $i from 0 through 40 {
+          &:nth-child(#{$i}) {
+            transform: translate3D(
+              random(50) - 25 * 1%,
+              random(100) - 50 * 1%,
+              calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px)
+            );
+          }
         }
       }
+    }
+  }
+}
+
+// ----------
+// Styling
+// ----------
+
+@font-face {
+  font-family: "Cotham";
+  src: url("/assets/fonts/CothamSans.otf");
+}
+
+:root{
+
+  // --primo: #ff14d0;
+  // --primo: #560C84;
+  --primo: #1AE11A;
+
+  // --secondo:  #0f0;
+  // --secondo: #1FEA76;
+  --secondo:#f2f6fa;
+
+  --terzo:rgb(144, 215, 46);
+
+  --main: #00f;
+
+  --reg: 2vw;
+  --tit: 3vw;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cotham";
+  background-color: var(--secondo);
+  color: hsl(231, 15%, 18%);
+  padding: 0;
+  margin: 0;
+}
+
+#tit{
+  font-family: "Cotham";
+  font-size: var(--tit);
+  margin: 0;
+  position: fixed;
+  bottom: 3rem;
+  left: 1rem;
+  text-align: center;
+}
+
+#sottotit {
+  font-size: var(--tit);
+  margin: 0;
+  position: fixed;
+  bottom: .8rem;
+  left: 1rem;
+  text-align: center;
+}
+
+.spirale{
+  position: fixed;
+  height: 100%; 
+  width: 50%; 
+  margin: 0 25%; 
+  // font-size: 10px;
+  // top: -30%; 
+  animation: spirale 10s infinite;
+// border: solid 2px red;
+}
+
+.spirale textPath{
+  font-size: 50px;
+  color: grey;
+}
+
+@keyframes spirale {
+  100% {transform:rotate(360deg)}
+}
+
+
+.scene3D {
+  > div {
+    padding: 2vw;
+    background-color: var(--secondo);
+    border: solid var(--primo) .3vw;
+
+    h1 {
+      font-size: var(--tit);
+      // color: var(--terzo);
+      // margin-top: 0;
+      // margin: 0;
+      
+    }
+
+    p{
+      font-size: var(--reg);
+    }
+
+    a{
+      text-decoration: underline;
+      color: var(--primo);
+    }
+
+    a:hover{
+      text-decoration: none;
+      filter: invert(100%);
+    }
+
+
     }
   }

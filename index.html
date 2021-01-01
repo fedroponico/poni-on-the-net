@@ -1,64 +1,72 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Poni's Portfolio</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <style>
-          .spirale{position: fixed; width: 80%; margin: 0 10%; top: -10vw; animation: spirale 10s infinite;}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Poni's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-          @keyframes spirale {
-            100% {transform:rotate(360deg)}
-          }
-        </style>
-    </head>
-    <body>
-        <div class="spirale">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+</head>
 
-          <defs>
-            <path id="MyPath" fill="none" stroke="red" d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" />
-          </defs>
+<body>
+
+  
+
+  <div>
+  <!-- <svg viewBox="0 0 100 100"  xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+    <path id="spyral" fill="none" stroke="red"
+          d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" />
+    </defs>
+  
+    <text>
+      <textPath textLenght="1000" xlink:href="#spyral">
+        Frase da capire e da scoprire gira gira l'ape maia
+      </textPath>
+    </text>
+  
+  </svg> -->
+
+
+  <svg class="spirale" viewBox="0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+      <path id="circle"
+            d="M250,400
+               a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+            transform="rotate(12,250,250)"/>
+  </defs>
+  
+    <text>
+      <textPath xlink:href="#circle" textLenght="1000">
+        Frase da capire e da scoprire gira gira l'ape maia Frase da capirape mai Frase da capire e da scoprire gira gira l'ape maia
+      </textPath>
+    </text>
+  
+  </svg>
+</div> 
+
+
+
+
+  <h2 id="tit">Federico Poni is an artist?</h2>
+  <h2 id="sottotit">Probably yes, but he could also be a<span id="me"></span></h2>
+
+
+  
+  <div class="viewport">
+    <div class="scene3D-container">
+      <div class="scene3D">
         
-          <text>
-            <textPath href="#MyPath">
-              Questa frase sarà dinamica, connettero il mio telegram a qua e viaz quando ho le palle girate pubblico insulti
-                
-            </textPath>
-          </text>
-        
-        </svg>
       </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
 
-      <!-- <div class="viewport">
-        <div class="scene3D-container">
-          <div class="scene3D">
-
-     <div id="bio">
-        <h1>Federico Poni:<br>a<span id="me"></span><br>stuck in a body of an artist</h1>
-        <p></p>
-      </div> -->
-
-
-            <!--</div>
-          </div>
-        </div> -->
-
-        <div class="viewport">
-          <div class="scene3D-container">
-            <div class="scene3D"> 
-              
-            </div>
-          </div>
-        </div>
-        
-        
-      <script src="script.js" async></script>
-    </body>
 </html>
