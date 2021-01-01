@@ -144,7 +144,7 @@
   "tecnica": "",
   "descrizione": "",
   "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/DJI3.jpg\" style=\" width: 50vw; \""
+  "img":"/assets/img/DJI3.JPG\" style=\" width: 50vw; \""
 },
 {
   "titolo": "",
@@ -167,21 +167,21 @@
   "img":""
 },
 {
-  "titolo": "<iframe src=\"https://www.instagram.com/tv/CCeJOFnAWue/?igshid=1jicev8qrctyt\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
+  "titolo": "",
   "tecnica": "",
   "descrizione": "",
   "stile":"border: 0;background-color: rgba(0,0,0,0)",
   "img":"/assets/img/HBW1.jpg\" style=\" width: 50vw; \""
 },
 {
-  "titolo": "<iframe src=\"https://www.instagram.com/tv/CCeJOFnAWue/?igshid=1jicev8qrctyt\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
+  "titolo": "",
   "tecnica": "",
   "descrizione": "",
   "stile":"border: 0;background-color: rgba(0,0,0,0)",
   "img":"/assets/img/HBW2.jpg\" style=\" width: 50vw; \""
 },
 {
-  "titolo": "<iframe src=\"https://www.instagram.com/tv/CCeJOFnAWue/?igshid=1jicev8qrctyt\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
+  "titolo": "",
   "tecnica": "",
   "descrizione": "",
   "stile":"border: 0;background-color: rgba(0,0,0,0)",
@@ -221,14 +221,14 @@
   "tecnica": "",
   "descrizione": "",
   "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/SfaP1_1.jpg"
+  "img":"/assets/img/SfaP1_1.JPG"
 },
 {
   "titolo": "",
   "tecnica": "",
   "descrizione": "",
   "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/SfaP1_2.jpg\" style=\" width: 50vw; \""
+  "img":"/assets/img/SfaP1_2.JPG\" style=\" width: 50vw; \""
 },
 
 
