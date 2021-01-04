@@ -1,11 +1,11 @@
 :root {
-  --scenePerspective: 1;
+  --scenePerspective: .7;
   --scenePerspectiveOriginX: 50;
-  --scenePerspectiveOriginY: 30;
-  --itemZ: 2.3;
+  --scenePerspectiveOriginY: 25;
+  --itemZ: 3;
   --cameraSpeed: 150; // Where 1 is the fastest
-  --cameraZ: 30;
-  --viewportHeight: 10;
+  --cameraZ: 60;
+  --viewportHeight: 5;
 
 }
 
@@ -38,10 +38,16 @@
         position: absolute;
         display: block;
         width: 100%;
-        top: 40%;
+        top: 70%;
+
 
         @media only screen and (min-width: 600px) {
-          width: 45%;
+          width: 100%;
+        }
+
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+          
         }
 
         &:nth-child(2n) {
@@ -52,15 +58,28 @@
           right: 0;
         }
 
-        @for $i from 0 through 40 {
+        @for $i from 0 through 20 {
           &:nth-child(#{$i}) {
             transform: translate3D(
-              random(50) - 25 * 1%,
               random(100) - 50 * 1%,
+              random(40) - 25 * 1%,
               calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px)
             );
           }
         }
+
+        @media only screen and (max-width: 600px) {
+          @for $i from 0 through 20 {
+            &:nth-child(#{$i}) {
+              transform: translate3D(
+                 2%,
+                2%,
+                calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px)
+              );
+            }
+          }
+        }
+
       }
     }
   }
@@ -89,8 +108,10 @@
 
   --main: #00f;
 
-  --reg: 2vw;
-  --tit: 3vw;
+  --reg: 5vw;
+  --tit: 6vw;
+  --regRes: 7vw;
+  --titRes: 9vw;
 }
 
 
@@ -99,6 +120,7 @@
 *:after {
   box-sizing: border-box;
 }
+
 
 html{
   scroll-behavior: smooth;
@@ -114,7 +136,7 @@ body {
 
 #tit{
   font-family: "Cotham";
-  font-size: var(--tit);
+  font-size: 3.5vw;
   margin: 0;
   position: fixed;
   bottom: 3rem;
@@ -123,7 +145,7 @@ body {
 }
 
 #sottotit {
-  font-size: var(--tit);
+  font-size: 3vw;
   margin: 0;
   position: fixed;
   bottom: .8rem;
@@ -136,10 +158,8 @@ body {
   height: 100%; 
   width: 50%; 
   margin: 0 25%; 
-  // font-size: 10px;
-  // top: -30%; 
+
   animation: spirale 10s infinite;
-// border: solid 2px red;
 }
 
 .spirale textPath{
@@ -151,8 +171,42 @@ body {
   100% {transform:rotate(360deg)}
 }
 
+@media only screen and (max-width: 600px) {
+  #tit{
+    font-size: var(--titRes);
+    top: .8rem;
+    text-align: left;
+  }
+  #sottotit{
+    font-size: var(--titRes);
+    bottom: .8rem;
+    text-align: left;
+
+  }
+  .spirale{
+    width: 100%;
+    margin: 0
+  }
+}
+
 
 .scene3D {
+
+  @media only screen and (min-width: 600px) {
+    h1 {
+      font-size: var(--titRes);
+    }
+
+    p{
+      font-size: var(--regRes);
+    }
+
+    img{
+      width: 200vw;
+    }
+  }
+
+
   > div {
     padding: 2vw;
     background-color: var(--secondo);
@@ -160,14 +214,14 @@ body {
 
     h1 {
       font-size: var(--tit);
-      // color: var(--terzo);
-      // margin-top: 0;
-      // margin: 0;
-      
     }
 
     p{
       font-size: var(--reg);
+    }
+
+    img{
+      width: 100vw;
     }
 
     a{
