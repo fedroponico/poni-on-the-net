@@ -13,6 +13,7 @@
   height: calc(var(--viewportHeight) * 1px);
 
   .scene3D-container {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,6 +27,7 @@
     transform: translate3d(0, 0, 0); //Allow Hardware-Accelerated CSS
 
     .scene3D {
+      
       position: absolute;
       top: 0;
       height: 100vh;
@@ -129,7 +131,8 @@ html{
 body {
   font-family: "Cotham";
   background-color: var(--secondo);
-  color: hsl(231, 15%, 18%);
+  // background-color: black;
+  color:hsl(231, 15%, 18%);
   padding: 0;
   margin: 0;
 }
@@ -142,15 +145,38 @@ body {
   bottom: 3rem;
   left: 1rem;
   text-align: center;
+  z-index: 0;
 }
 
 #sottotit {
+  z-index: 0;
   font-size: 3vw;
   margin: 0;
   position: fixed;
   bottom: .8rem;
   left: 1rem;
   text-align: center;
+}
+
+.button{
+  font-family: "Cotham";
+  font-size: 3.5vw;
+  margin: 0;
+  position: fixed;
+  top: .8rem;
+  right: 1rem;
+  text-align: center;
+  z-index: 100;
+}
+
+button{
+  width: 5vw;
+  height: 5vw;
+  z-index: 10;
+  outline: none;
+  background-size: 5vw;
+  border: none;
+  background-color: var(--secondo);
 }
 
 .spirale{
@@ -162,35 +188,98 @@ body {
   animation: spirale 10s infinite;
 }
 
-.spirale textPath{
+
+
+#info{
+  position: fixed;
+  width: 100%;
+  margin: auto 0;
+  text-align: center;
+  animation: info 5s;
+  font-size: var(--tit);
+  color:rgba(0, 0, 0, 0);
+}
+
+@keyframes info {
+  0% {color: rgba(0,0,0,1)}
+  99% {color: rgba(0, 0, 0, 0)}
+  100% {display:none}
+}
+
+
+textPath{
   font-size: 50px;
-  color: grey;
+  fill: hsl(231, 15%, 18%);
 }
 
 @keyframes spirale {
   100% {transform:rotate(360deg)}
 }
 
+.darkMode{
+  background-color: black;
+  h2{
+    color: var(--primo);
+  }
+  textPath{
+    fill: var(--primo);
+  }
+  path{
+    stroke: var(--primo);
+  }
+  button{
+    background: black;
+  }
+  path{
+    fill:var(--primo)
+  }
+  .scene3D-container{
+     p{
+       color: red;
+     }
+    filter: invert(1);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #tit{
+    width: 70%;
     font-size: var(--titRes);
     top: .8rem;
     text-align: left;
+    z-index: 0;
   }
   #sottotit{
     font-size: var(--titRes);
     bottom: .8rem;
     text-align: left;
-
+    z-index: 0;
   }
+
   .spirale{
     width: 100%;
     margin: 0
   }
+
+  #info{
+    margin-top: 30%;
+    font-size: var(--regRes);
+  }
+
+  .button{
+    top: 1.2rem;
+  }
+
+  button{
+    width: 15vw;
+    height: 15vw;
+  }
 }
 
 
+
 .scene3D {
+
 
   @media only screen and (min-width: 600px) {
     h1 {

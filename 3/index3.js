@@ -152,3 +152,10 @@ typewriter.typeString(' designer')
         
         
         .start();
+
+
+             
+        function dark(){
+          var element = document.body;
+          element.classList.toggle("darkMode")
+        }

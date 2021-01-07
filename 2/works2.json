@@ -13,21 +13,21 @@
     "tecnica": "",
     "descrizione": "",
     "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/DJI1.jpg\" "
+    "img":"../assets/img/DJI1.jpg\" "
   },
   {
     "titolo": "",
     "tecnica": "",
     "descrizione": "",
     "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/DJI2.jpg\" "
+    "img":"../assets/img/DJI2.jpg\" "
   },
   {
     "titolo": "",
     "tecnica": "",
     "descrizione": "",
     "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/DJI4.jpg\" "
+    "img":"../assets/img/DJI4.jpg\" "
   },
   
   
@@ -47,14 +47,14 @@
     "tecnica": "",
     "descrizione": "",
     "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/HBW1.jpg\" "
+    "img":"../assets/img/HBW1.jpg\" "
   },
   {
     "titolo": "",
     "tecnica": "",
     "descrizione": "",
     "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/HBW3.jpg\" "
+    "img":"../assets/img/HBW3.jpg\" "
   },
   
 
@@ -77,9 +77,9 @@
       
   {
     "titolo": "",
-    "tecnica": "",
-    "descrizione": "<a  href=\"3/index3.html\" style=\"text-align: center; text-decoration: none\">NEXT PAGE</a>",
-    "stile":"",
+    "tecnica": "<a  href=\"../index.html\" style=\"text-align: center; text-decoration: none\">BACK</a>",
+    "descrizione": "<a  href=\"../3/\" style=\"text-align: center; text-decoration: none\">NEXT</a>",
+    "stile":"width: 30vw; text-align: center; ",
     "img":""
   }
 

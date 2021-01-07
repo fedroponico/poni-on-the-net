@@ -5,7 +5,7 @@
   {
     "titolo": "Hello",
     "tecnica": "",
-    "descrizione": "This is the portfolio of Federico Poni<br><br>You can send me an <a target=\"_blank\"  mailto:href=\"poni@riseup.net\" style=\"color:white;\">email</a> or have a look to my empty <a target=\"_blank\"  href=\"http://instagram.com/federico_poni\" style=\"color:white;\" target=\"_blank\">instagram</a> or have a look to my filled <a target=\"_blank\"  href=\"http://are.na/federico_poni\" style=\"color:white;\" target=\"_blank\">arena</a>",
+    "descrizione": "This is the portfolio of Federico Poni<br><br>You can send me an <a target=\"_blank\"  mailto:href=\"poni@riseup.net\" style=\"color:white;\">email</a> or have a look to my empty <a target=\"_blank\"  href=\"http://instagram.com/federico_poni\" style=\"color:white;\" target=\"_blank\">instagram</a> or have a look to my filled <a target=\"_blank\"  href=\"http://are.na/federico-poni\" style=\"color:white;\" target=\"_blank\">arena</a>",
     "stile": "background-color:#1AE11A; color:var(--secondo); ",
     "img":""
   },
@@ -94,11 +94,13 @@
   },
 
 
+
+
 {
   "titolo": "",
   "tecnica": "",
-  "descrizione": "<a href=\"2/index2.html\" style=\"text-align: center; text-decoration: none\">NEXT PAGE</a>",
-  "stile":"",
+  "descrizione": "<a href=\"2\" style=\"text-decoration: none\">NEXT</a>",
+  "stile":"width: 30vw; text-align: center; ",
   "img":""
 }
 
