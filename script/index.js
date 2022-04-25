@@ -16,7 +16,7 @@ const perspectiveOrigin = {
 
 document.addEventListener("DOMContentLoaded", function() {
     axios
-        .get("../selected.json")
+        .get("/federicoponi.it/selected.json")
         .then(function(response) {
             works = response.data;
             appendWorks(works);
