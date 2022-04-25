@@ -1,328 +1,354 @@
 :root {
-  --scenePerspective: .7;
-  --scenePerspectiveOriginX: 50;
-  --scenePerspectiveOriginY: 25;
-  --itemZ: 3;
-  --cameraSpeed: 150; // Where 1 is the fastest
-  --cameraZ: 60;
-  --viewportHeight: 5;
-
+    --scenePerspective: .7;
+    --scenePerspectiveOriginX: 50;
+    --scenePerspectiveOriginY: 25;
+    --itemZ: 3;
+    --cameraSpeed: 100; // Where 1 is the fastest
+    --cameraZ: 60;
+    --viewportHeight: 5;
 }
 
 .viewport {
-  height: calc(var(--viewportHeight) * 1px);
-
-  .scene3D-container {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
-    perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%)
-      calc(var(--scenePerspectiveOriginY) * 1%);
-    will-change: perspective-origin;
-    transform: translate3d(0, 0, 0); //Allow Hardware-Accelerated CSS
-
-    .scene3D {
-      
-      position: absolute;
-      top: 0;
-      height: 100vh;
-      width: 100%;
-      transform-style: preserve-3d;
-      transform: translateZ(calc(var(--cameraZ) * 1px));
-      will-change: transform;
-
-      > div {
-        position: absolute;
-        display: block;
+    height: calc(var(--viewportHeight) * 1px);
+    .scene3D-container {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        top: 70%;
-
-
-        @media only screen and (min-width: 600px) {
-          width: 100%;
-        }
-
-        @media only screen and (max-width: 600px) {
-          width: 100%;
-          
-        }
-
-        &:nth-child(2n) {
-          left: 0;
-        }
-
-        &:nth-child(2n + 1) {
-          right: 0;
-        }
-
-        @for $i from 0 through 20 {
-          &:nth-child(#{$i}) {
-            transform: translate3D(
-              random(100) - 50 * 1%,
-              random(40) - 25 * 1%,
-              calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px)
-            );
-          }
-        }
-
-        @media only screen and (max-width: 600px) {
-          @for $i from 0 through 20 {
-            &:nth-child(#{$i}) {
-              transform: translate3D(
-                 2%,
-                2%,
-                calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px)
-              );
+        height: 100%;
+        perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
+        perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(var(--scenePerspectiveOriginY) * 1%);
+        will-change: perspective-origin;
+        transform: translate3d(0, 0, 0); //Allow Hardware-Accelerated CSS
+        .scene3D {
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            transform-style: preserve-3d;
+            transform: translateZ(calc(var(--cameraZ) * 1px));
+            will-change: transform;
+            >div {
+                position: absolute;
+                display: block;
+                width: 100%;
+                top: 70%;
+                @media only screen and (min-width: 600px) {
+                    width: 100%;
+                }
+                @media only screen and (max-width: 600px) {
+                    width: 100%;
+                }
+                &:nth-child(2n) {
+                    left: 0;
+                }
+                &:nth-child(2n + 1) {
+                    right: 0;
+                }
+                @for $i from 0 through 10 {
+                    &:nth-child(#{$i}) {
+                        transform: translate3D( random(100) - 50 * 1%, random(40) - 25 * 1%, calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px));
+                    }
+                }
+                @media only screen and (max-width: 600px) {
+                    @for $i from 0 through 20 {
+                        &:nth-child(#{$i}) {
+                            transform: translate3D( 2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * #{$i} * -1px));
+                        }
+                    }
+                }
             }
-          }
         }
-
-      }
     }
-  }
 }
 
 // ----------
 // Styling
 // ----------
-
 @font-face {
-  font-family: "Cotham";
-  src: url("/assets/fonts/CothamSans.otf");
+    font-family: "Cotham";
+    src: url("/assets/fonts/CothamSans.otf");
 }
 
-:root{
-
-  // --primo: #ff14d0;
-  // --primo: #560C84;
-  --primo: #1AE11A;
-
-  // --secondo:  #0f0;
-  // --secondo: #1FEA76;
-  --secondo:#f2f6fa;
-
-  --terzo:rgb(144, 215, 46);
-
-  --main: #00f;
-
-  --reg: 5vw;
-  --tit: 6vw;
-  --regRes: 7vw;
-  --titRes: 9vw;
-}
-
-
+$main: #0f0;
+$second: #ffffff;
+$third: #000;
+$reg: 5vw;
+$tit: 6vw;
+$regRes: 7vw;
+$titRes: 9vw;
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Cotham";
-  background-color: var(--secondo);
-  // background-color: black;
-  color:hsl(231, 15%, 18%);
-  padding: 0;
-  margin: 0;
+    font-family: "Cotham";
+    background-color: $second;
+    // background-color: black;
+    color: hsl(231, 15%, 18%);
+    padding: 0;
+    margin: 0;
 }
 
-#tit{
-  font-family: "Cotham";
-  font-size: 3.5vw;
-  margin: 0;
-  position: fixed;
-  bottom: 3rem;
-  left: 1rem;
-  text-align: center;
-  z-index: 0;
+#tit {
+    font-size: 45px;
+    margin: 0;
+    position: fixed;
+    bottom: 3rem;
+    left: 1rem;
+    text-align: center;
+    z-index: 0;
 }
 
 #sottotit {
-  z-index: 0;
-  font-size: 3vw;
-  margin: 0;
-  position: fixed;
-  bottom: .8rem;
-  left: 1rem;
-  text-align: center;
+    z-index: 0;
+    font-size: 30px;
+    margin: 0;
+    position: fixed;
+    bottom: .8rem;
+    left: 1rem;
+    text-align: center;
 }
 
-.button{
-  font-family: "Cotham";
-  font-size: 3.5vw;
-  margin: 0;
-  position: fixed;
-  top: .8rem;
-  right: 1rem;
-  text-align: center;
-  z-index: 100;
+.button {
+    font-size: 3.5vw;
+    margin: 0;
+    position: fixed;
+    top: .8rem;
+    right: 1rem;
+    text-align: center;
+    z-index: 100;
+    button {
+        width: 5vw;
+        height: 5vw;
+        z-index: 10;
+        outline: none;
+        background-size: 5vw;
+        border: none;
+        background-color: $second;
+    }
 }
 
-button{
-  width: 5vw;
-  height: 5vw;
-  z-index: 10;
-  outline: none;
-  background-size: 5vw;
-  border: none;
-  background-color: var(--secondo);
+.spirale {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    margin: 0 25%;
+    animation: spirale 10s infinite;
 }
 
-.spirale{
-  position: fixed;
-  height: 100%; 
-  width: 50%; 
-  margin: 0 25%; 
-
-  animation: spirale 10s infinite;
+.menus {
+    // position: fixed;
+    margin: 0;
+    z-index: 100;
+    .projects {
+        position: fixed;
+        right: 1rem;
+        bottom: .8rem;
+        width: 5vw;
+        height: 5vw;
+        z-index: 11;
+        // outline: ;
+        // background-size: 5vw;
+        border: 2px $main solid;
+        background-color: $second;
+    }
+    .bio {
+        position: fixed;
+        right: 6rem;
+        bottom: .8rem;
+        width: 5vw;
+        height: 5vw;
+        z-index: 11;
+        // outline: ;
+        // background-size: 5vw;
+        border: 2px $main solid;
+        background-color: $second;
+    }
+    .wiki {
+        position: fixed;
+        right: 11rem;
+        bottom: .8rem;
+        width: 5vw;
+        height: 5vw;
+        z-index: 11;
+        // outline: ;
+        // background-size: 5vw;
+        border: 2px $main solid;
+        background-color: $second;
+    }
 }
 
-
-
-#info{
-  position: fixed;
-  width: 100%;
-  margin: auto 0;
-  text-align: center;
-  animation: info 5s;
-  font-size: var(--tit);
-  color:rgba(0, 0, 0, 0);
+.listProj {
+    border: solid $main 5px;
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    // margin-left: 35%;
+    margin-top: 10%;
+    overflow-y: scroll;
+    li {
+        line-height: 30px;
+        list-style: none;
+        padding: 10px;
+    }
 }
 
-@keyframes info {
-  0% {color: rgba(0,0,0,1)}
-  99% {color: rgba(0, 0, 0, 0)}
-  100% {display:none}
+.listBio {
+    border: solid $main 5px;
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    right: 0;
+    margin-top: 10%;
+    overflow-y: scroll;
+    li {
+        line-height: 30px;
+        list-style: none;
+        padding: 10px;
+    }
 }
 
-
-textPath{
-  font-size: 50px;
-  fill: hsl(231, 15%, 18%);
+// #info {
+//     position: fixed;
+//     width: 100%;
+//     margin: auto 0;
+//     text-align: center;
+//     animation: info 5s;
+//     font-size: $tit;
+//     color: rgba(0, 0, 0, 0);
+// }
+// @keyframes info {
+//     0% {
+//         color: rgba(0, 0, 0, 1)
+//     }
+//     99% {
+//         color: rgba(0, 0, 0, 0)
+//     }
+//     100% {
+//         display: none
+//     }
+// }
+textPath {
+    font-size: 50px;
+    fill: hsl(231, 15%, 18%);
 }
 
 @keyframes spirale {
-  100% {transform:rotate(360deg)}
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
-.darkMode{
-  background-color: black;
-  h2{
-    color: var(--primo);
-  }
-  textPath{
-    fill: var(--primo);
-  }
-  path{
-    stroke: var(--primo);
-  }
-  button{
-    background: black;
-  }
-  path{
-    fill:var(--primo)
-  }
-  .scene3D-container{
-     p{
-       color: red;
-     }
-    filter: invert(1);
-  }
+.first {
+    img {
+        display: none;
+    }
+    background-color: $main;
+    color:$second;
+    border: solid 12px $third;
+}
+
+.darkMode {
+    background-color: black;
+    h1 {
+        color: $second;
+    }
+    h2 {
+        color: $main;
+    }
+    textPath {
+        fill: $main;
+    }
+    path {
+        stroke: $main;
+        fill: $main
+    }
+    button {
+        background: black;
+    }
+    // .scene3D-container {
+    // filter: invert(1);
+    // }
+    .first {
+        background-color: $third;
+        border: solid 7px $main;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  #tit{
-    width: 70%;
-    font-size: var(--titRes);
-    top: .8rem;
-    text-align: left;
-    z-index: 0;
-  }
-  #sottotit{
-    font-size: var(--titRes);
-    bottom: .8rem;
-    text-align: left;
-    z-index: 0;
-  }
-
-  .spirale{
-    width: 100%;
-    margin: 0
-  }
-
-  #info{
-    margin-top: 30%;
-    font-size: var(--regRes);
-  }
-
-  .button{
-    top: 1.2rem;
-  }
-
-  button{
-    width: 15vw;
-    height: 15vw;
-  }
+    #tit {
+        width: 70%;
+        font-size: $titRes;
+        top: .8rem;
+        text-align: left;
+        z-index: 0;
+    }
+    #sottotit {
+        font-size: $titRes;
+        bottom: .8rem;
+        text-align: left;
+        z-index: 0;
+    }
+    .spirale {
+        width: 100%;
+        margin: 0
+    }
+    #info {
+        margin-top: 30%;
+        font-size: $regRes;
+    }
+    .button {
+        top: 1.2rem;
+    }
+    button {
+        width: 15vw;
+        height: 15vw;
+    }
 }
 
-
-
 .scene3D {
-
-
-  @media only screen and (min-width: 600px) {
-    h1 {
-      font-size: var(--titRes);
+    @media only screen and (min-width: 600px) {
+        h1 {
+            font-size: $titRes;
+        }
+        p {
+            font-size: $regRes;
+        }
+        img {
+            width: 230vw;
+        }
     }
-
-    p{
-      font-size: var(--regRes);
+    >div {
+        padding: 5vw;
+        // background-color: $second;
+        // border: solid $main .3vw;
+        h1 {
+            font-size: $tit;
+        }
+        p,
+        a,
+        li {
+            font-size: $reg;
+        }
+        img {
+            width: 100vw;
+        }
+        a {
+            text-decoration: underline;
+            color: $second;
+            font-size: $reg;
+        }
+        a:hover {
+            text-decoration: none;
+            // filter: invert(100%);
+        }
     }
-
-    img{
-      width: 200vw;
-    }
-  }
-
-
-  > div {
-    padding: 2vw;
-    background-color: var(--secondo);
-    border: solid var(--primo) .3vw;
-
-    h1 {
-      font-size: var(--tit);
-    }
-
-    p{
-      font-size: var(--reg);
-    }
-
-    img{
-      width: 100vw;
-    }
-
-    a{
-      text-decoration: underline;
-      color: var(--primo);
-    }
-
-    a:hover{
-      text-decoration: none;
-      filter: invert(100%);
-    }
-
-
-    }
-  }
+}

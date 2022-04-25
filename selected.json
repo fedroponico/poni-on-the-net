@@ -1,0 +1,92 @@
+[
+
+    {
+        "class": "first",
+        "titolo": "",
+        "url": "",
+        "descrizione": "Upcoming: <ul><li>Nothing</li><li>Nothing</li></ul> <br> <p>At <a href='http://funix.xyz' target='_blank'>www.funix.xyz</a> you can find my wiki-playground;      </p>     <p>send a pigeon mail to <i>poni [at] riseup.net</i></p> <a target='_blank' href='https://github.com/pnofrc?tab=repositories'>my Git</a> <br> <a target='_blank' href='https://pzwiki.wdka.nl/mediadesign/User:Federico'>XPUB</a>",
+        "stile": "",
+        "img": ""
+    },
+    {
+        "class": "",
+        "titolo": "Wifi Screamer",
+        "url": "wifi_screamer",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "screamer.jpg\" "
+    },
+
+    {
+        "class": "",
+        "titolo": "EtherAxis",
+        "url": "earthrise",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "ether.jpg\" "
+    },
+    {
+        "class": "",
+        "titolo": "iper Ozio Versi",
+        "url": "iper_ozio_versi",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "ozio.jpeg\" "
+    },
+
+    {
+        "class": "",
+        "titolo": "Caution Weird Floor",
+        "url": "caution_weird_floor",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "weird.png\" "
+    },
+
+    {
+        "class": "",
+        "titolo": "Praxis",
+        "url": "praxis",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "praxis.jpg\" "
+    },
+
+    {
+        "class": "",
+        "titolo": "Earthrise",
+        "url": "earthrise",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "earth.png\" "
+    },
+
+    {
+        "class": "",
+        "titolo": "Con/te",
+        "url": "conte",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "conte.png\" "
+    },
+
+
+    {
+        "class": "",
+        "titolo": "FY(A)I<br>For Your (Automatic) Information",
+        "url": "fyai",
+        "descrizione": "",
+        "stile": "",
+        "img": "fyai.png"
+    },
+
+    {
+        "class": "",
+        "titolo": "/WEB Dji Safoul : Hello World! w/ <a target='_blank' href=\"http://salta.su\">un * salta</a>",
+        "url": "dji_safoul",
+        "descrizione": "",
+        "stile": "",
+        "img": "DJI4.jpg"
+    }
+
+]

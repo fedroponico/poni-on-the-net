@@ -1,330 +1,139 @@
-[
+[{
+        "titolo": "Wifi Screamer",
+        "url": "wifi_screamer",
+        "descrizione": ""
+    },
 
-  {
-    "titolo": "Hello",
-    "tecnica": "",
-    "descrizione": "This is the portfolio of Federico Poni<br><br>You can send me an <a mailto:href=\"poni@riseup.net\" style=\"color:white;\">email</a> or have a look to my empty <a href=\"http://instagram.com/federico_poni\" style=\"color:white;\" target=\"_blank\">instagram</a> or have a look to my filled <a href=\"http://are.na/federico_poni\" style=\"color:white;\" target=\"_blank\">arena</a>",
-    "stile": "background-color:#1AE11A; color:var(--secondo); ",
-    "img":""
-  },
-  {
-    "titolo": "",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/self-portrait.png\" style=\" width: 150%; \""
-  },
+    {
+        "titolo": "EtherAxis",
+        "url": "earthrise",
+        "descrizione": ""
+    },
+    {
+        "titolo": "iper Ozio Versi",
+        "url": "iper_ozio_versi",
+        "descrizione": ""
+    },
 
+    {
 
+        "titolo": "Caution Weird Floor",
+        "url": "caution_weird_floor",
+        "descrizione": ""
+    },
 
+    {
 
-  {
-    "titolo": "Practical Vision",
-    "tecnica":"Website, Telegram Bot, Publication - 2020",
-    "descrizione":"In the context of the republishing project \"Wor(l)ds for the future\", I worked with the text Practical Vision wrote by the pan-African collective Jalada<br><br><a href=\"http://issue.xpub.nl/13/PRACTICAL_VISION\" target=\"_blank\">Have a look to the web version!</a>",
-    "stile": "",
-    "img":""
-  },
-  {
-    "titolo": "",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/PV_W.png\" style=\" width: 50vw; \""
-  },
-  {
-    "titolo": "",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/PV1.jpg\" style=\" width: 50vw; \""
-  },
-  {
-    "titolo": "",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/PV2.jpg\" style=\" width: 50vw; \""
-  },
-  {
-    "titolo": "",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/PV3.jpg\" style=\" width: 50vw; \""
-  },
+        "titolo": "Praxis",
+        "url": "praxis",
+        "descrizione": ""
+    },
+
+    {
+
+        "titolo": "Earthrise",
+        "url": "earthrise",
+        "descrizione": ""
+    },
+
+    {
+        "titolo": "Con/te",
+        "url": "conte",
+        "descrizione": ""
+    },
 
 
+    {
+        "titolo": "FY(A)I<br>For Your (Automatic) Information",
+        "url": "fyai",
+        "descrizione": ""
+    },
 
+    {
+        "titolo": "/WEB Dji Safoul : Hello World! w/ <a target='_blank' href=\"http://salta.su\">un * salta</a>",
+        "url": "dji_safoul",
+        "descrizione": ""
+    },
 
-
-
-
-  {
-    "titolo": "<i>Dear Humans, <br>Who is writing this is the Network itself.</i>",
-    "tecnica":"Performance - SpeechToText + DuckDuckGo.com - 2020",
-    "descrizione":"Performance aimed to trigger a clue in occasion of \"Climb the Firewall\", a IRL game organized by <a href=\"http://www.louisateichmann.com/\">Louisa Teichmann</a>.<br> ",
-    "stile": "",
-    "img":""
-  },
-  {
-    "titolo": "",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/DH.jpg\" style=\" width: 50vw; \""
-  },
+    {
+        "url": "practical_vision",
+        "titolo": "Practical Vision",
+        "descrizione": "In the context of the republishing project \"Wor(l)ds for the future\", I worked with the text Practical Vision wrote by the pan-African collective Jalada<br><br><a href=\"http://issue.xpub.nl/13/PRACTICAL_VISION\" target=\"_blank\">Have a look to the web version!</a>"
+    },
 
 
 
+    {
+        "url": "dear_humans",
+        "titolo": "<i>Dear Humans, <br>Who is writing this is the Network itself.</i>",
+        "descrizione": "Performance aimed to trigger a clue in occasion of \"Climb the Firewall\", a IRL game organized by <a href=\"http://www.louisateichmann.com/\">Louisa Teichmann</a>.<br> "
+    },
 
 
-  {
-    "titolo": "Studio for an Abstracted Playground Vol.2",
-    "tecnica":"Virtual Installation - Photogrammetry - 2020",
-    "descrizione":"Homonym continuum of the first version, this second hypotesis was born after the italian total lockdown of March 2020. At the playground beside my place there was always a few of parents and children, even if it was not allowed: here, the desire of playing shows itself up.<br>The virtual installation is an attempt of transpose the device of the playground in the only \"legal\" realm of that days.<br><br>In the context of <a href=\"http://www.mattersofcare.net/\">Matters of Care, curated by <a href=\"#\">Marco Ginex</a>",
-    "stile": "",
-    "img":""
-  },
-  {
-    "titolo": "",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 0;background-color: rgba(0,0,0,0)",
-    "img":"/assets/img/SfaP2.png\" style=\" width: 50vw; \""
-  },
+
+    {
+        "url": "abstracted_playground2",
+        "titolo": "Studio for an Abstracted Playground Vol.2",
+        "descrizione": "Homonym continuum of the first version, this second hypotesis was born after the italian total lockdown of March 2020. At the playground beside my place there was always a few of parents and children, even if it was not allowed: here, the desire of playing shows itself up.<br>The virtual installation is an attempt of transpose the device of the playground in the only \"legal\" realm of that days.<br><br>In the context of <a href=\"http://www.mattersofcare.net/\">Matters of Care, curated by <a href=\"#\">Marco Ginex</a>"
+    },
 
 
 
 
-
-  {
-    "titolo": "FY(A)I<br>For Your (Automatic) Information",
-    "tecnica":"Performance - SpeechToText + DuckDuckGo.com - 2020",
-    "descrizione":"The human being does not master the machines which it designs, assembles and produces. Humanity plays a passive roles towards technology, it is only a medium through machines and capital reach maturity. As it known, we are in the information era and technologies, like AI, start to play an important role in the dynamic of the real: a collaboration must be born. Joining forces with automation, we could hypotesize a post-capitalism world, but humans must question their role in the world and begin to literate to comprise complexity.<br><br>Thanks to the tool “I’m feeling ducky” of DuckDuckGo.com, the recited text forms a multi layered vision of the given informations to explore the stack of the reality.<br><br>View at <a href=\"http://post-screen.com\">Post-Screen Festival</a>",
-    "stile": "",
-    "img":""
-  },
-  {
-    "titolo": "<iframe src=\"https://player.vimeo.com/video/394644261\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-    "tecnica": "",
-    "descrizione": "",
-    "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-    "img":""
-  },
+    {
+        "url": "fyai",
+        "titolo": "FY(A)I<br>For Your (Automatic) Information",
+        "descrizione": "The human being does not master the machines which it designs, assembles and produces. Humanity plays a passive roles towards technology, it is only a medium through machines and capital reach maturity. As it known, we are in the information era and technologies, like AI, start to play an important role in the dynamic of the real: a collaboration must be born. Joining forces with automation, we could hypotesize a post-capitalism world, but humans must question their role in the world and begin to literate to comprise complexity.<br><br>Thanks to the tool “I’m feeling ducky” of DuckDuckGo.com, the recited text forms a multi layered vision of the given informations to explore the stack of the reality.<br><br>View at <a href=\"http://post-screen.com\">Post-Screen Festival</a>"
+    },
 
 
 
 
-
-
-{
-  "titolo": "/WEB Dji Safoul : Hello World!<br>w/ <a href=\"http://salta.su\">un * salta</a>",
-  "tecnica":"Research + Collective Performance - Projection on Water Tower, Mobile Phones, Websocket - 2020",
-  "descrizione":"A research on local manifestations of a global concept such as internet. Following the statement of a murales found in Coubanao’s school, un * salta traveled to the south of Senegal to work with students and teachers trying to imagine a new local fruition for the web. The project, articulated in a timeframe of months of preparation and three weeks on site, comes in differents ways: a coding workshop with the students of the local school, an online dictionary developed with a telegram bot for playing and overcome linguistic barrier, and a final collective performance carried out both in the village and online, that consisted in translating in multiple languages and through a custom web app, a text written with the guys at school.<br><br>un * salta is currently working on a physical and online publication that documents all the process and the results of this first trip, in order to experiment and augmenting post digital publishing.",
-  "stile": "",
-  "img":""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/DJI1.jpg\" style=\" width: 50vw; \""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/DJI2.jpg\" style=\" width: 50vw; \""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/DJI3.JPG\" style=\" width: 50vw; \""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/DJI4.jpg\" style=\" width: 50vw; \""
-},
+    {
+        "url": "dji_safoul",
+        "titolo": "/WEB Dji Safoul : Hello World!<br>w/ <a href=\"http://salta.su\">un * salta</a>",
+        "descrizione": "A research on local manifestations of a global concept such as internet. Following the statement of a murales found in Coubanao’s school, un * salta traveled to the south of Senegal to work with students and teachers trying to imagine a new local fruition for the web. The project, articulated in a timeframe of months of preparation and three weeks on site, comes in differents ways: a coding workshop with the students of the local school, an online dictionary developed with a telegram bot for playing and overcome linguistic barrier, and a final collective performance carried out both in the village and online, that consisted in translating in multiple languages and through a custom web app, a text written with the guys at school.<br><br>un * salta is currently working on a physical and online publication that documents all the process and the results of this first trip, in order to experiment and augmenting post digital publishing."
+    },
 
 
 
 
+    {
+        "url": "hbw",
+        "titolo": "Hyper Binge Watching<br>w/ <a href=\"http://salta.su\">un * salta</a>",
+        "descrizione": "Hyper Binge Watching is an accellerated answer to bulimic trends of streaming entertainment.<br>It consists in a manifesto and a multi canal video environment. Why watching ten episodes one by one when you can do it simultaneously?<br><br>Installed with the Senegalese series “Maitresse d’un homme Marié”.<br><br><a href=\"https://arena-attachments.s3.amazonaws.com/5975752/e93e16b0149233fa1e3e16e6b6813ac7.pdf?1579773397\">Manifesto here</a>"
+    },
 
 
-{
-  "titolo": "Hyper Binge Watching<br>w/ <a href=\"http://salta.su\">un * salta</a>",
-  "tecnica":"Hyper Multichannel Installation + Manifesto - HD + Sound - 2019",
-  "descrizione":"Hyper Binge Watching is an accellerated answer to bulimic trends of streaming entertainment.<br>It consists in a manifesto and a multi canal video environment. Why watching ten episodes one by one when you can do it simultaneously?<br><br>Installed with the Senegalese series “Maitresse d’un homme Marié”.<br><br><a href=\"https://arena-attachments.s3.amazonaws.com/5975752/e93e16b0149233fa1e3e16e6b6813ac7.pdf?1579773397\">Manifesto here</a>",
-  "stile": "",
-  "img":""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/HBW1.jpg\" style=\" width: 50vw; \""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/HBW2.jpg\" style=\" width: 50vw; \""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/HBW3.jpg\" style=\" width: 50vw; \""
-},
+    {
+        "url": "passeggiata",
+        "titolo": "La Passeggiata (The Walk)<br>w/ <a href=\"http://salta.su\">un * salta</a>",
+        "descrizione": "A documentary about post-tourism shooted at Agrigento projected in itinerant form in the streets of the city.<br>In the context of <a href=\"http://utopiafest.it\">Utopia Fest 2019</a>"
+
+    },
+
+    {
+        "url": "abstracted_playground",
+        "titolo": "Studio for an Abstracted Playground",
+        "descrizione": "Studio on the playground equipment. <br>The regolamentation of the game is the result of the West experience, the playground’s format born from a urban planning need: the concept of game is brutally defined in a determined space and in a determined time frame. In the playground runs the disinterest playful but seeing it from a different point of view, we can paraphrase the socio-economic condition where everything is meticolously regolarized."
+    },
+
+    {
+        "url": "volo",
+        "titolo": "Tentativo di Volo (Flight Attempt)",
+        "descrizione": "A tribute to Gino De Dominicis"
+    },
 
 
-
-
-{
-  "titolo": "La Passeggiata (The Walk)<br>w/ <a href=\"http://salta.su\">un * salta</a>",
-  "tecnica":"Collective Performance - Portable Beamer + Mobile Phones - 2019",
-  "descrizione":"A documentary about post-tourism shooted at Agrigento projected in itinerant form in the streets of the city.<br>In the context of <a href=\"http://utopiafest.it\">Utopia Fest 2019</a>",
-  "stile": "",
-  "img":""
-},
-{
-  "titolo": "<iframe src=\"https://player.vimeo.com/video/385430805\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":""
-},
-
-
-
-
-{
-  "titolo": "Studio for an Abstracted Playground",
-  "tecnica":"Installation - Prints on Textile - 2019",
-  "descrizione":"Studio on the playground equipment. <br>The regolamentation of the game is the result of the West experience, the playground’s format born from a urban planning need: the concept of game is brutally defined in a determined space and in a determined time frame. In the playground runs the disinterest playful but seeing it from a different point of view, we can paraphrase the socio-economic condition where everything is meticolously regolarized.",
-  "stile": "",
-  "img":""
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/SfaP1_1.JPG"
-},
-{
-  "titolo": "",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 0;background-color: rgba(0,0,0,0)",
-  "img":"/assets/img/SfaP1_2.JPG\" style=\" width: 50vw; \""
-},
-
-
-
-
-{
-  "titolo": "Tentativo di Volo (Flight Attempt)",
-  "tecnica":"Moving Images - HD + Sound - 2018",
-  "descrizione":"A tribute to Gino De Dominicis",
-  "stile": "",
-  "img":""
-},
-{
-  "titolo": "<iframe src=\"https://player.vimeo.com/video/364656825\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":""
-},
-
-
-
-
-
-  
-{
-  "titolo": "An Empirical Statement",
-  "tecnica":"Moving Images - HD + Sound - 2018",
-  "descrizione":"Just a statement.",
-  "stile": "",
-  "img":""
-},
-{
-  "titolo": "<iframe src=\"https://player.vimeo.com/video/307330167\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":""
-},
-
-
-
-
-
-
-{
-  "titolo": "Four Porn Attitudes!",
-  "tecnica":"Multichannel - Hi8 + Sound - 2018",
-  "descrizione":"Absurd news from the complexity era.",
-  "stile": "",
-  "img":""
-},
-{
-  "titolo": "<iframe src=\"https://player.vimeo.com/video/364848737\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":""
-},
-{
-  "titolo": "<iframe src=\"https://player.vimeo.com/video/366115276\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":""
-},
-{
-  "titolo": "<iframe src=\"https://player.vimeo.com/video/364666357\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":""
-},
-{
-  "titolo": "<iframe src=\"https://player.vimeo.com/video/364849521\" width=\"1280\" height=\"720\" frameborder=\"0\" allow= \"fullscreen\" allowfullscreen></iframe>",
-  "tecnica": "",
-  "descrizione": "",
-  "stile":"border: 10px;background-color: rgba(0,0,0,0)",
-  "img":""
-}
+    {
+        "url": "empirical_statement",
+        "titolo": "An Empirical Statement",
+        "descrizione": "Just a statement."
+    },
+    {
+        "url": "porn_attitudes",
+        "titolo": "Four Porn Attitudes!",
+        "descrizione": "Absurd news from the complexity era."
+    }
 
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
