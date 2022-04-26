@@ -1,401 +1,442 @@
 :root {
-  --scenePerspective: .7;
-  --scenePerspectiveOriginX: 50;
-  --scenePerspectiveOriginY: 25;
-  --itemZ: 3;
-  --cameraSpeed: 100;
-  --cameraZ: 60;
-  --viewportHeight: 5;
+    --scenePerspective: .7;
+    --scenePerspectiveOriginX: 50;
+    --scenePerspectiveOriginY: 25;
+    --itemZ: 3;
+    --cameraSpeed: 100;
+    --cameraZ: 60;
+    --viewportHeight: 5;
 }
 
 .viewport {
-  height: calc(var(--viewportHeight) * 1px);
+    height: calc(var(--viewportHeight) * 1px);
 }
+
 .viewport .scene3D-container {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
-  perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(var(--scenePerspectiveOriginY) * 1%);
-  will-change: perspective-origin;
-  transform: translate3d(0, 0, 0);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
+    perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(var(--scenePerspectiveOriginY) * 1%);
+    will-change: perspective-origin;
+    transform: translate3d(0, 0, 0);
 }
+
 .viewport .scene3D-container .scene3D {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  transform-style: preserve-3d;
-  transform: translateZ(calc(var(--cameraZ) * 1px));
-  will-change: transform;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(calc(var(--cameraZ) * 1px));
+    will-change: transform;
 }
-.viewport .scene3D-container .scene3D > div {
-  position: absolute;
-  display: block;
-  width: 100%;
-  top: 70%;
+
+.viewport .scene3D-container .scene3D>div {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 70%;
 }
+
 @media only screen and (min-width: 600px) {
-  .viewport .scene3D-container .scene3D > div {
-    width: 100%;
-  }
+    .viewport .scene3D-container .scene3D>div {
+        width: 100%;
+    }
 }
+
 @media only screen and (max-width: 600px) {
-  .viewport .scene3D-container .scene3D > div {
-    width: 100%;
-  }
+    .viewport .scene3D-container .scene3D>div {
+        width: 100%;
+    }
 }
-.viewport .scene3D-container .scene3D > div:nth-child(2n) {
-  left: 0;
+
+.viewport .scene3D-container .scene3D>div:nth-child(2n) {
+    left: 0;
 }
-.viewport .scene3D-container .scene3D > div:nth-child(2n+1) {
-  right: 0;
+
+.viewport .scene3D-container .scene3D>div:nth-child(2n+1) {
+    right: 0;
 }
-.viewport .scene3D-container .scene3D > div:nth-child(0) {
-  transform: translate3D(-22%, 6%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(0) {
+    transform: translate3D(-22%, 6%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(1) {
-  transform: translate3D(49%, -1%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(1) {
+    transform: translate3D(49%, -1%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(2) {
-  transform: translate3D(35%, 3%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(2) {
+    transform: translate3D(35%, 3%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(3) {
-  transform: translate3D(43%, 0%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(3) {
+    transform: translate3D(43%, 0%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(4) {
-  transform: translate3D(-30%, -11%, calc(var(--itemZ) * var(--cameraSpeed) * 4 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(4) {
+    transform: translate3D(-30%, -11%, calc(var(--itemZ) * var(--cameraSpeed) * 4 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(5) {
-  transform: translate3D(4%, 13%, calc(var(--itemZ) * var(--cameraSpeed) * 5 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(5) {
+    transform: translate3D(4%, 13%, calc(var(--itemZ) * var(--cameraSpeed) * 5 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(6) {
-  transform: translate3D(35%, 14%, calc(var(--itemZ) * var(--cameraSpeed) * 6 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(6) {
+    transform: translate3D(35%, 14%, calc(var(--itemZ) * var(--cameraSpeed) * 6 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(7) {
-  transform: translate3D(-23%, -11%, calc(var(--itemZ) * var(--cameraSpeed) * 7 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(7) {
+    transform: translate3D(-23%, -11%, calc(var(--itemZ) * var(--cameraSpeed) * 7 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(8) {
-  transform: translate3D(2%, -9%, calc(var(--itemZ) * var(--cameraSpeed) * 8 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(8) {
+    transform: translate3D(2%, -9%, calc(var(--itemZ) * var(--cameraSpeed) * 8 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(9) {
-  transform: translate3D(-45%, 3%, calc(var(--itemZ) * var(--cameraSpeed) * 9 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(9) {
+    transform: translate3D(-45%, 3%, calc(var(--itemZ) * var(--cameraSpeed) * 9 * -1px));
 }
-.viewport .scene3D-container .scene3D > div:nth-child(10) {
-  transform: translate3D(-5%, -19%, calc(var(--itemZ) * var(--cameraSpeed) * 10 * -1px));
+
+.viewport .scene3D-container .scene3D>div:nth-child(10) {
+    transform: translate3D(-5%, -19%, calc(var(--itemZ) * var(--cameraSpeed) * 10 * -1px));
 }
+
 @media only screen and (max-width: 600px) {
-  .viewport .scene3D-container .scene3D > div:nth-child(0) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(1) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(2) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(3) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(4) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 4 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(5) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 5 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(6) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 6 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(7) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 7 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(8) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 8 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(9) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 9 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(10) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 10 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(11) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 11 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(12) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 12 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(13) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 13 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(14) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 14 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(15) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 15 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(16) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 16 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(17) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 17 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(18) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 18 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(19) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 19 * -1px));
-  }
-  .viewport .scene3D-container .scene3D > div:nth-child(20) {
-    transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 20 * -1px));
-  }
+    .viewport .scene3D-container .scene3D>div:nth-child(0) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(1) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(2) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(3) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(4) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 4 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(5) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 5 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(6) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 6 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(7) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 7 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(8) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 8 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(9) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 9 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(10) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 10 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(11) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 11 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(12) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 12 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(13) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 13 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(14) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 14 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(15) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 15 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(16) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 16 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(17) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 17 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(18) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 18 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(19) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 19 * -1px));
+    }
+    .viewport .scene3D-container .scene3D>div:nth-child(20) {
+        transform: translate3D(2%, 2%, calc(var(--itemZ) * var(--cameraSpeed) * 20 * -1px));
+    }
 }
 
 @font-face {
-  font-family: "Cotham";
-  src: url("/federicoponi.it/assets/fonts/CothamSans.otf");
+    font-family: "Cotham";
+    src: url("/federicoponi.it/assets/fonts/CothamSans.otf");
 }
+
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Cotham";
-  background-color: #ffffff;
-  color: #272935;
-  padding: 0;
-  margin: 0;
+    font-family: "Cotham";
+    background-color: #ffffff;
+    color: #272935;
+    padding: 0;
+    margin: 0;
 }
 
 #tit {
-  font-size: 45px;
-  margin: 0;
-  position: fixed;
-  bottom: 3rem;
-  left: 1rem;
-  text-align: center;
-  z-index: 0;
+    font-size: 45px;
+    margin: 0;
+    position: fixed;
+    bottom: 3rem;
+    left: 1rem;
+    text-align: center;
+    z-index: 0;
 }
 
 #sottotit {
-  z-index: 0;
-  font-size: 30px;
-  margin: 0;
-  position: fixed;
-  bottom: 0.8rem;
-  left: 1rem;
-  text-align: center;
+    z-index: 0;
+    font-size: 30px;
+    margin: 0;
+    position: fixed;
+    bottom: 0.8rem;
+    left: 1rem;
+    text-align: center;
 }
 
 .button {
-  font-size: 3.5vw;
-  margin: 0;
-  position: fixed;
-  top: 0.8rem;
-  right: 1rem;
-  text-align: center;
-  z-index: 100;
+    font-size: 3.5vw;
+    margin: 0;
+    position: fixed;
+    top: 0.8rem;
+    right: 1rem;
+    text-align: center;
+    z-index: 100;
 }
+
 .button button {
-  width: 5vw;
-  height: 5vw;
-  z-index: 10;
-  outline: none;
-  background-size: 5vw;
-  border: none;
-  background-color: #ffffff;
+    width: 5vw;
+    height: 5vw;
+    z-index: 10;
+    outline: none;
+    background-size: 5vw;
+    border: none;
+    background-color: #ffffff;
 }
 
 .spirale {
-  position: fixed;
-  height: 100%;
-  width: 50%;
-  margin: 0 25%;
-  animation: spirale 10s infinite;
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    margin: 0 25%;
+    animation: spirale 10s infinite;
 }
 
 .menus {
-  margin: 0;
-  z-index: 100;
+    margin: 0;
+    z-index: 100;
 }
+
 .menus .projects {
-  position: fixed;
-  right: 1rem;
-  bottom: 0.8rem;
-  width: 5vw;
-  height: 5vw;
-  z-index: 11;
-  border: 2px #0f0 solid;
-  background-color: #ffffff;
+    position: fixed;
+    right: 1rem;
+    bottom: 0.8rem;
+    width: 5vw;
+    height: 5vw;
+    z-index: 11;
+    border: 2px #0f0 solid;
+    background-color: #ffffff;
 }
+
 .menus .bio {
-  position: fixed;
-  right: 6rem;
-  bottom: 0.8rem;
-  width: 5vw;
-  height: 5vw;
-  z-index: 11;
-  border: 2px #0f0 solid;
-  background-color: #ffffff;
+    position: fixed;
+    right: 6rem;
+    bottom: 0.8rem;
+    width: 5vw;
+    height: 5vw;
+    z-index: 11;
+    border: 2px #0f0 solid;
+    background-color: #ffffff;
 }
+
 .menus .wiki {
-  position: fixed;
-  right: 11rem;
-  bottom: 0.8rem;
-  width: 5vw;
-  height: 5vw;
-  z-index: 11;
-  border: 2px #0f0 solid;
-  background-color: #ffffff;
+    position: fixed;
+    right: 11rem;
+    bottom: 0.8rem;
+    width: 5vw;
+    height: 5vw;
+    z-index: 11;
+    border: 2px #0f0 solid;
+    background-color: #ffffff;
 }
 
 .listProj {
-  border: solid #0f0 5px;
-  position: fixed;
-  width: 50%;
-  height: 80%;
-  margin-top: 10%;
-  overflow-y: scroll;
+    border: solid #0f0 5px;
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    margin-top: 10%;
+    overflow-y: scroll;
 }
+
 .listProj li {
-  line-height: 30px;
-  list-style: none;
-  padding: 10px;
+    line-height: 30px;
+    list-style: none;
+    padding: 10px;
 }
 
 .listBio {
-  border: solid #0f0 5px;
-  position: fixed;
-  width: 50%;
-  height: 80%;
-  right: 0;
-  margin-top: 10%;
-  overflow-y: scroll;
+    border: solid #0f0 5px;
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    right: 0;
+    margin-top: 10%;
+    overflow-y: scroll;
 }
+
 .listBio li {
-  line-height: 30px;
-  list-style: none;
-  padding: 10px;
+    line-height: 30px;
+    list-style: none;
+    padding: 10px;
 }
 
 textPath {
-  font-size: 50px;
-  fill: #272935;
+    font-size: 50px;
+    fill: #272935;
 }
 
 @keyframes spirale {
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 .first {
-  background-color: #0f0;
-  color: #ffffff;
-  border: solid 12px #000;
+    background-color: #0f0;
+    color: #ffffff;
+    border: solid 12px #000;
 }
+
 .first img {
-  display: none;
+    display: none;
 }
 
 .darkMode {
-  background-color: black;
+    background-color: black;
 }
+
 .darkMode h1 {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .darkMode h2 {
-  color: #0f0;
+    color: #0f0;
 }
+
 .darkMode textPath {
-  fill: #0f0;
+    fill: #0f0;
 }
+
 .darkMode path {
-  stroke: #0f0;
-  fill: #0f0;
+    stroke: #0f0;
+    fill: #0f0;
 }
+
 .darkMode button {
-  background: black;
+    background: black;
 }
+
 .darkMode .first {
-  background-color: #000;
-  border: solid 7px #0f0;
+    background-color: #000;
+    border: solid 7px #0f0;
+}
+
+.darkMode .proj a {
+    color: #0f0;
 }
 
 @media only screen and (max-width: 600px) {
-  #tit {
-    width: 70%;
-    font-size: 9vw;
-    top: 0.8rem;
-    text-align: left;
-    z-index: 0;
-  }
-
-  #sottotit {
-    font-size: 9vw;
-    bottom: 0.8rem;
-    text-align: left;
-    z-index: 0;
-  }
-
-  .spirale {
-    width: 100%;
-    margin: 0;
-  }
-
-  #info {
-    margin-top: 30%;
-    font-size: 7vw;
-  }
-
-  .button {
-    top: 1.2rem;
-  }
-
-  button {
-    width: 15vw;
-    height: 15vw;
-  }
+    #tit {
+        width: 70%;
+        font-size: 9vw;
+        top: 0.8rem;
+        text-align: left;
+        z-index: 0;
+    }
+    #sottotit {
+        font-size: 9vw;
+        bottom: 0.8rem;
+        text-align: left;
+        z-index: 0;
+    }
+    .spirale {
+        width: 100%;
+        margin: 0;
+    }
+    #info {
+        margin-top: 30%;
+        font-size: 7vw;
+    }
+    .button {
+        top: 1.2rem;
+    }
+    button {
+        width: 15vw;
+        height: 15vw;
+    }
 }
+
 @media only screen and (min-width: 600px) {
-  .scene3D h1 {
-    font-size: 9vw;
-  }
-  .scene3D p {
-    font-size: 7vw;
-  }
-  .scene3D img {
-    width: 230vw;
-  }
+    .scene3D h1 {
+        font-size: 9vw;
+    }
+    .scene3D p {
+        font-size: 7vw;
+    }
+    .scene3D img {
+        width: 230vw;
+    }
 }
-.scene3D > div {
-  padding: 5vw;
+
+.scene3D>div {
+    padding: 5vw;
 }
-.scene3D > div h1 {
-  font-size: 6vw;
+
+.scene3D>div h1 {
+    font-size: 6vw;
 }
-.scene3D > div p,
-.scene3D > div a,
-.scene3D > div li {
-  font-size: 5vw;
+
+.scene3D>div p,
+.scene3D>div a,
+.scene3D>div li {
+    font-size: 5vw;
 }
-.scene3D > div img {
-  width: 100vw;
+
+.scene3D>div img {
+    width: 100vw;
 }
-.scene3D > div a {
-  text-decoration: underline;
-  color: #ffffff;
-  font-size: 5vw;
+
+.scene3D>div a {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 5vw;
 }
-.scene3D > div a:hover {
-  text-decoration: none;
+
+.scene3D>div a:hover {
+    text-decoration: none;
 }
+
 
 /*# sourceMappingURL=style.css.map */

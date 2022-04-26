@@ -1,4 +1,39 @@
+import os
+import json
 
+j = open('../proj.json')
+data = json.load(j)
+
+lista = []
+listaUrl = []
+for e in range(len(data)):
+    for ee in range(len(data[e])):
+        if data[e][ee]['titolo'] != '' :
+            lista.append(data[e][ee]['titolo'])
+            print('ok')
+        else:
+            print('oksss')
+        if data[e][ee]['url'] != '' :
+            listaUrl.append(data[e][ee]['url'])
+        else:
+            continue
+    
+    
+print(lista)
+
+z = 0
+listLink = ''
+
+for p in lista:
+    listLink += f'<a href="../{p}/">{p}</a><br>'
+print(listLink)
+
+for n in lista:
+    owd = os.getcwd()
+    os.mkdir(listaUrl[z])
+    os.chdir(listaUrl[z])
+    f = open("index.html", "w")
+    f.write(f'''
     
     <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +43,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <!-- <meta property="og:image" content="http://www.federicoponi.it/assets/img/"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Federico Poni | Etheraxis</title>
+    <title>Federico Poni | {n}</title>
     <link rel="stylesheet" href="../../style.css" />
         <link rel="stylesheet" href="../styleProj.css" />
     <!-- <script src="../../script/core.js"></script> -->
@@ -18,7 +53,7 @@
 <body>
 
     <div class="proj">
-        <a href="../Etheraxis/">Etheraxis</a><br><a href="../iper Ozio Versi/">iper Ozio Versi</a><br><a href="../Caution Weird Floor/">Caution Weird Floor</a><br><a href="../Praxis/">Praxis</a><br><a href="../Earthrise/">Earthrise</a><br><a href="../Con/te/">Con/te</a><br><a href="../FY(A)I<br>For Your (Automatic) Information/">FY(A)I<br>For Your (Automatic) Information</a><br>
+        {listLink}
     </div>
 
     <div class="button">
@@ -59,11 +94,15 @@
     <script src="../../script/dark.js" defer></script>
     <script src="../../script/three.js"></script>
     <script>
-        three(0)
+        three({z})
     </script>
 </body>
 
 
 </html>
     
+    ''')
     
+    f.close()
+    os.chdir(owd)
+    z=z+1

@@ -16,7 +16,7 @@ const perspectiveOrigin = {
 
 document.addEventListener("DOMContentLoaded", function() {
     axios
-        .get("/federicoponi.it/selected.json")
+        .get("../selected.json")
         .then(function(response) {
             works = response.data;
             appendWorks(works);
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function createWorkItem(work) {
     return `<div class="${work.class}" style="${work.stile}">
       <p>${work.descrizione}</p>
-    <a href='projects/${work.url}.html'> <img src="/assets/img/${work.img}"></a>
+    <a href='projects/${work.url}'> <img src="/assets/img/${work.img}"></a>
   <h1>${work.titolo}</h1>
 </div>`;
 }

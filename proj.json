@@ -1,0 +1,129 @@
+[
+
+    [{
+            "class": "first",
+            "titolo": "Etheraxis",
+            "url": "Etheraxis",
+            "descrizione": "Blabnlbla etheraxis",
+            "stile": "",
+            "img": ""
+        },
+        {
+            "class": "",
+            "titolo": "",
+            "url": "",
+            "descrizione": "",
+            "stile": "border: 0;background-color: rgba(0,0,0,0)",
+            "img": "ether.jpg"
+        }
+    ],
+    [{
+            "class": "first",
+            "titolo": "iper Ozio Versi",
+            "url": "iperOzioVersi",
+            "descrizione": "ergbregegerger",
+            "stile": "",
+            "img": ""
+        },
+
+        {
+            "class": "",
+            "titolo": "",
+            "url": "",
+            "descrizione": "",
+            "stile": "border: 0;background-color: rgba(0,0,0,0)",
+            "img": "ozio.jpeg "
+        }
+    ],
+    [
+
+        {
+            "class": "first",
+            "titolo": "Caution Weird Floor",
+            "url": "CautionWeirdFloor",
+            "descrizione": "",
+            "stile": "",
+            "img": ""
+        },
+        {
+            "class": "",
+            "titolo": "",
+            "url": "",
+            "descrizione": "",
+            "stile": "border: 0;background-color: rgba(0,0,0,0)",
+            "img": "weird.jpeg "
+        }
+    ],
+    [
+
+        {
+            "class": "first",
+            "titolo": "Praxis",
+            "url": "Praxis",
+            "descrizione": "",
+            "stile": "",
+            "img": ""
+        }, {
+            "class": "",
+            "titolo": "",
+            "url": "",
+            "descrizione": "",
+            "stile": "border: 0;background-color: rgba(0,0,0,0)",
+            "img": "praxis.jpg"
+        }
+    ],
+
+    [{
+        "class": "first",
+        "titolo": "Earthrise",
+        "url": "Earthrise",
+        "descrizione": "",
+        "stile": "",
+        "img": ""
+    }, {
+
+        "class": "",
+        "titolo": "",
+        "url": "",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "earth.png"
+
+    }],
+    [{
+        "class": "first",
+        "titolo": "Con/te",
+        "url": "Conte",
+        "descrizione": "",
+        "stile": "",
+        "img": ""
+    }, {
+        "class": "",
+        "titolo": "",
+        "url": "",
+        "descrizione": "",
+        "stile": "border: 0;background-color: rgba(0,0,0,0)",
+        "img": "conte.png "
+    }],
+    [
+
+
+        {
+            "class": "first",
+            "titolo": "FY(A)I<br>For Your (Automatic) Information",
+            "url": "FYAI",
+            "descrizione": "",
+            "stile": "",
+            "img": ""
+        },
+
+        {
+            "class": "",
+            "titolo": "",
+            "url": "",
+            "descrizione": "",
+            "stile": "border: 0;background-color: rgba(0,0,0,0)",
+            "img": "fyai.png "
+        }
+    ]
+]

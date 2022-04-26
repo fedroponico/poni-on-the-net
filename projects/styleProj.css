@@ -1,0 +1,11 @@
+.proj {
+    margin: 15px;
+    position: fixed;
+    z-index: 100000;
+}
+
+.proj a {
+    color: black;
+    /* text-decoration: none; */
+    font-size: 1.5vw;
+}

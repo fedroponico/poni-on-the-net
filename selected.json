@@ -11,7 +11,7 @@
     {
         "class": "",
         "titolo": "Wifi Screamer",
-        "url": "wifi_screamer",
+        "url": "WifiScreamer",
         "descrizione": "",
         "stile": "border: 0;background-color: rgba(0,0,0,0)",
         "img": "screamer.jpg\" "
@@ -20,7 +20,7 @@
     {
         "class": "",
         "titolo": "EtherAxis",
-        "url": "earthrise",
+        "url": "Etheraxis/",
         "descrizione": "",
         "stile": "border: 0;background-color: rgba(0,0,0,0)",
         "img": "ether.jpg\" "
@@ -28,7 +28,7 @@
     {
         "class": "",
         "titolo": "iper Ozio Versi",
-        "url": "iper_ozio_versi",
+        "url": "iperOzioVersi",
         "descrizione": "",
         "stile": "border: 0;background-color: rgba(0,0,0,0)",
         "img": "ozio.jpeg\" "
@@ -37,7 +37,7 @@
     {
         "class": "",
         "titolo": "Caution Weird Floor",
-        "url": "caution_weird_floor",
+        "url": "CautionWeirdFloor",
         "descrizione": "",
         "stile": "border: 0;background-color: rgba(0,0,0,0)",
         "img": "weird.png\" "
@@ -46,7 +46,7 @@
     {
         "class": "",
         "titolo": "Praxis",
-        "url": "praxis",
+        "url": "Praxis",
         "descrizione": "",
         "stile": "border: 0;background-color: rgba(0,0,0,0)",
         "img": "praxis.jpg\" "
@@ -55,7 +55,7 @@
     {
         "class": "",
         "titolo": "Earthrise",
-        "url": "earthrise",
+        "url": "Earthrise",
         "descrizione": "",
         "stile": "border: 0;background-color: rgba(0,0,0,0)",
         "img": "earth.png\" "
@@ -63,8 +63,8 @@
 
     {
         "class": "",
-        "titolo": "Con/te",
-        "url": "conte",
+        "titolo": "Conte",
+        "url": "Conte",
         "descrizione": "",
         "stile": "border: 0;background-color: rgba(0,0,0,0)",
         "img": "conte.png\" "
@@ -74,7 +74,7 @@
     {
         "class": "",
         "titolo": "FY(A)I<br>For Your (Automatic) Information",
-        "url": "fyai",
+        "url": "FYAI",
         "descrizione": "",
         "stile": "",
         "img": "fyai.png"

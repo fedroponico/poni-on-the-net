@@ -19,11 +19,11 @@ function three(i) {
 
     document.addEventListener("DOMContentLoaded", function() {
         axios
-            .get("../selected.json")
+            .get("../../proj.json")
             .then(function(response) {
                 works = response.data;
-
-                appendWorks(works[i]["img"]);
+                console.log(response.data[i])
+                appendWorks(response.data[i]);
                 window.addEventListener("scroll", moveCamera);
                 window.addEventListener("mousemove", moveCameraAngle);
                 setSceneHeight();
@@ -45,8 +45,8 @@ function three(i) {
     function createWorkItem(work) {
         return `<div class="${work.class}" style="${work.stile}">
       <p>${work.descrizione}</p>
-    <a href='projects/${work.url}.html'> <img src="../../assets/img/${work.img}"></a>
-  <h1>${work.titolo}</h1>
+    <a href='../../assets/img/${work.img}'> <img src="../../assets/img/${work.img}"></a>
+  
 </div>`;
     }
 
